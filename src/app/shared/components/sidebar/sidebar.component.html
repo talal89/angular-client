@@ -1,0 +1,45 @@
+<!-- Page Sidebar Start-->
+<div class="logo-wrapper"><a routerLink='/home'>
+    <img src="assets/images/nmaa-logo.png" alt="Brand image"></a>
+</div>
+<nav>
+  <div class="main-navbar">
+    <div id="mainnav">
+
+      <ul class="navigation-menu custom-scrollbar">
+        <li class="navigation-menu__item" *ngFor="let menuItem of menuItems" [ngClass]="{active: menuItem.active}">
+          <!-- Sub -->
+          <a mdbWavesEffect activateParent href="javascript:void(0)" class="navigation-menu__item__link" [ngClass]="{active: menuItem.active}"
+            *ngIf="menuItem.type === 'sub'" (click)="toggletNavActive(menuItem)">
+            <app-feather-icons [icon]="menuItem.icon"></app-feather-icons><span>{{menuItem.title}}</span>
+            <div class="according-menu">
+              <i class="fa fa-angle-{{menuItem.active ? 'down' : 'right'}} pull-right" *ngIf="menuItem.children"></i>
+            </div>
+          </a>
+          <!-- Link -->
+          <a (click)="toggletNavActive(menuItem)" [routerLink]="!menuItem.type ? null : [menuItem.path]" routerLinkActive="active"
+            class="navigation-menu__item__link" [ngClass]="{active: menuItem.active}" *ngIf="menuItem.type === 'link'">
+            <app-feather-icons [icon]="menuItem.icon"></app-feather-icons><span>{{menuItem.title}}</span>
+            <div class="according-menu">
+              <i class="fa fa-angle-{{menuItem.active ? 'down' : 'right'}} pull-right" *ngIf="menuItem.children"></i>
+            </div>
+          </a>
+
+          <!-- 2nd Level Menu -->
+          <ul class="child-menu" [ngClass]="{active: menuItem.active}"
+            [ngClass]="{'open': menuItem.active, 'menu-close': !menuItem.active }" *ngIf="menuItem.children"
+            [style.display]="menuItem.active ? 'block' : 'none'">
+            <li class="child-menu__item" *ngFor="let childrenItem of menuItem.children" [ngClass]="{active: childrenItem.active}">
+              <!-- Link -->
+              <a mdbWavesEffect class="child-menu__item__link" [routerLink]="!childrenItem.type ? null : [childrenItem.path]" *ngIf="childrenItem.type === 'link'"
+                routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" activateParent>
+                <span>{{childrenItem.title}}</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>

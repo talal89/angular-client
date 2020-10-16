@@ -1,0 +1,25 @@
+<div class="signin-wrapper">
+  <div class="signin-box">
+    <div class="signin-box__brand">
+      <img src="/assets/images/nmaa-logo.png" alt="brand-image">
+    </div>
+    <div class="site-title">
+      <h5>Some Text</h5>
+    </div>
+    <div class="signin-box__form">
+      <form name="loginForm" [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+        <div class="form-group">
+          <label for="username">اسم المستخدم</label>
+          <input type="text" name="username" class="form-control" formControlName="username" autofocus>
+        </div>
+        <div class="form-group">
+          <label for="password">كلمة المرور</label>
+          <input type="password" name="password" class="form-control" formControlName="password">
+        </div>
+        <div class="form-action text-center">
+            <button class="btn btn-primary" [disabled]="loginForm.invalid" type="submit">تسجيل الدخول</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+/**=====================
+53. Dashboard CSS Start
+==========================**/
+//index dashboard css start
+
+.static-top-widget {
+  &:hover {
+    .icon-bg {
+      transform: rotate(-5deg) scale(1.1);
+      transition: all 0.3s ease;
+    }
+  }
+  div.align-self-center {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .media-body {
+    align-self: center !important;
+    padding-right: 30px;
+    .icon-bg {
+      position: absolute;
+      left: -14px;
+      top: 6px;
+      opacity: 0.2;
+      transition: all 0.3s ease;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+.bg-info {
+  .media.static-top-widget {
+    .align-self-center {
+      background-color: $info-color;
+    }
+  }
+}
+.bg-primary {
+  .media.static-top-widget {
+    .align-self-center {
+      background-color: $primary-color;
+    }
+  }
+}
+.bg-secondary {
+  .media.static-top-widget {
+    .align-self-center {
+      background-color: $secondary-color;
+    }
+  }
+}
+.bg-danger {
+  .media.static-top-widget {
+    .align-self-center {
+      background-color: $danger-color;
+    }
+  }
+}
+
+
+/**=====================
+53. Dashboard CSS Ends
+==========================**/

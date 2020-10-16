@@ -1,0 +1,9 @@
+.btn-primary{
+  &:hover{
+    background-color: rgba($primary-color, 0.95) !important;
+    border-color: rgba($primary-color, 0.95) !important;
+  }
+  &:disabled {
+	  cursor: not-allowed;
+  }
+}

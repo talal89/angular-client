@@ -1,0 +1,58 @@
+/**=====================
+    25. Authentication CSS Start
+==========================**/
+
+@import '../../../assets/scss/theme/variables';
+
+:host{
+    display: block;
+  }
+  .signin-wrapper {
+    padding: 50px 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .signin-box{
+    width: 420px;
+    max-width: 600px;   
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    background-color: #ffffff;
+  
+    &__brand {
+        text-align: center;
+  
+        img {
+            width: 250px;
+        }
+    }
+  }
+  
+  .site-title {
+    padding-bottom: 10px;
+    h5 {
+      color: $primary-color;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .signin-wrapper{
+      padding: 25px 0;
+    }
+    .signin-box {
+      width: 90%;
+      max-width: 100%;
+    }
+  }

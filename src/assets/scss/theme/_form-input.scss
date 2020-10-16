@@ -1,0 +1,15 @@
+.form-control {
+  border-color: rgba(98, 99, 99, 0.5);
+
+  &:focus{
+	border-color: rgba($primary-color, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
+
+  &.ng-invalid.ng-touched.ng-dirty{
+	  border-color: $danger-color;
+  }
+}
+
+
