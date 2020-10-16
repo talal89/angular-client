@@ -1,6 +1,11 @@
-# Cuba
+# Angular Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+
+
+## Install Dependencies
+
+Navigate to Project folder. Run `npm i` in command line to install dependencies. npm requires node to be installed on the machine.
 
 ## Development server
 
