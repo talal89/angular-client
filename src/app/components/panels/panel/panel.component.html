@@ -6,7 +6,7 @@
         <h5>Panels (one at a time)</h5>
       </div>
       <div class="card-body">
-        <ngb-accordion [closeOthers]="false" activeIds="static-1">
+        <ngb-accordion [closeOthers]="true"  (panelChange) = "onPanelChange($event)" #myaccordion="ngbAccordion">
           <ngb-panel id="static-1" title="Panel-1">
             <ng-template ngbPanelContent>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
@@ -23,7 +23,6 @@
             </ng-template>
           </ngb-panel>
           <ngb-panel id="static-2" title="Panel-2">
-
             <ng-template ngbPanelContent>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia

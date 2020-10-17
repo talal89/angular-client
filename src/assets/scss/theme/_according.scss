@@ -4,21 +4,33 @@
 .accordion {
     & > .card {
         box-shadow: none;
-        border: $card-border-color !important;
+        border: 1px solid rgba(0,0,0,0.15) !important;
         margin-bottom: 10px !important;
         .card-header {
             margin: -1px;
             padding: 10px 20px;
+            background-color: #fff;
+            border-color: 1px solid rgba(0,0,0,0.15);
+       
             .btn {
                 padding: 0;
             }
             .btn-link {
-                color: $white;
+                color: $primary-color;
                 font-weight: 600;
                 &:hover,
                 &:focus {
                     text-decoration: none;
                 }
+            }
+
+            &.active{
+                background-color: $primary-color;
+
+                .btn-link {
+                    color: $white;
+                }
+                
             }
         }
         &:last-child {
