@@ -229,15 +229,18 @@ $header-size: 136px;
             .profile-media {
               .media-body {
                 margin-left: 15px;
+                
+                .user-icon-before {
+                  font-size: 20px;
+                }
+
+                .user-label, .user-icon-after{
+                  margin-right: 10px;
+                }
+
                 span {
                   font-weight: 600;
                   color: #fff;
-                }
-                p {
-                  font-size: 12px;
-                  line-height: 1;
-                  color: rgba($theme-body-font-color, 0.7);
-                  font-weight: 600;
                 }
               }
             }
