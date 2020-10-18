@@ -27,7 +27,7 @@ $header-size: 136px;
     content: "";
     top: -7px;
     position: absolute;
-    left: 10px;
+    left: 10px !important;
     z-index: 2;
   }
   &:after {
@@ -39,26 +39,11 @@ $header-size: 136px;
     content: "";
     top: -7px;
     position: absolute;
-    left: 10px;
+    left: 10px !important;
     z-index: 1;
   }
 }
-%sidebar-icon {
-  display: block;
-  transform: rotateX(0deg);
-  z-index: 1;
-  background-color: $white;
-  color: $light-background;
-  font-size: 14px;
-  opacity: 1;
-  margin-top: -70px;
-  padding: 10px 0;
-  text-align: left;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
-  position: absolute;
-  width: 245px;
-  margin-left: 115px;
-}
+
 /*======= Page Header css Start ======= */
 .page-wrapper {
   .page-main-header {
@@ -203,42 +188,7 @@ $header-size: 136px;
         outline: 0 !important;
       }
     }
-    .left-menu-header {
-      ul {
-        li {
-          .search-bg {
-            width: 35px;
-            height: 35px;
-            background-color: rgba($primary-color, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            i {
-              color: $primary-color;
-            }
-          }
-          .search-form {
-            input {
-              padding: 15px;
-              border: none;
-              background: $transparent-color;
-              color: $theme-body-sub-title-color;
-              font-weight: 600;
-              font-family: $font-roboto, $font-serif;
-              &::placeholder {
-                color: $theme-body-sub-title-color;
-                font-weight: 600;
-                font-family: $font-roboto, $font-serif;
-              }
-            }
-            &.form-inline {
-              display: flex;
-            }
-          }
-        }
-      }
-    }
+    
     .nav-right {
       text-align: left;
       padding-left: $main-header-right-nav-right;
@@ -429,8 +379,8 @@ $header-size: 136px;
       }
       .profile-dropdown {
         width: 160px;
-        top: 57px;
-        left: -12px;
+        top: 49px;
+        left: 0;
         padding: 10px;
         li {
           padding: 10px !important;
@@ -492,47 +442,3 @@ $header-size: 136px;
     }
   }
 }
-/**======Main Header css Ends ======**/
-
-// responsive header
-@media only screen and (max-width: 1366px) {
-  .profile-dropdown {
-    &.onhover-show-div {
-      right: 0;
-      left: unset !important;
-      &:before,
-      &:after {
-        right: 10px !important;
-        left: unset !important;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1199px) {
-  .page-main-header {
-    .main-header-right {
-      .nav-right {
-        > ul {
-          > li {
-            padding: 6px;
-            margin-right: 15px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 991px) {
-  .page-main-header {
-    .main-header-right {
-      .nav-right {
-        .notification-dropdown {
-          top: 46px;
-        }
-      }
-    }
-  }
-}
-/**=====================
-    05. Header CSS Ends
-==========================**/
