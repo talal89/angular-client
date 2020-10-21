@@ -1092,32 +1092,7 @@
         }
       }
     }
-    .page-main-header {
-      .main-header-right {
-        .nav-right {
-          > ul {
-            > li {
-              margin-right: 20px;
-              &:first-child {
-                margin-right: 0;
-              }
-            }
-          }
-          &.right-menu {
-            ul {
-              li {
-                .profile-media {
-                  .media-body {
-                    margin-right: 15px;
-                    margin-left: unset;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+
   }
   .bookmark {
     ul {
@@ -2572,34 +2547,7 @@
     }
   }
   @media only screen and (max-width: 1199px) {
-    .page-wrapper {
-      .page-main-header {
-        .main-header-right {
-          .nav-right {
-            > ul {
-              > li {
-                &:first-child {
-                  padding-right: 0 !important;
-                  padding-left: 10px !important;
-                }
-                .submenu {
-                  li {
-                    &:first-child {
-                      padding-right: 15px !important;
-                      padding-left: 15px !important;
-                    }
-                  }
-                }
-              }
-            }
-            > .nav-menus-left {
-              right: 33px;
-              left: unset;
-            }
-          }
-        }
-      }
-    }
+  
     .user-profile {
       .hovercard {
         .user-image {
@@ -2609,125 +2557,7 @@
         }
       }
     }
-    .email-wrap {
-      .row {
-        .col-xl-6 {
-          padding-right: 15px;
-        }
-        .col-xl-3 {
-          + .col-xl-3 {
-            padding-left: 15px;
-          }
-        }
-      }
-      .email-app-sidebar {
-        .main-menu {
-          & > li {
-            text-align: right;
-            a {
-              i {
-                margin-right: unset;
-                margin-left: 10px;
-              }
-            }
-          }
-        }
-        ul {
-          padding-right: 0;
-        }
-      }
-      .email-content {
-        .email-top {
-          .user-emailid {
-            &:after {
-              float: left;
-            }
-          }
-        }
-      }
-      .email-right-aside {
-        .email-body {
-          .pr-0 {
-            padding-right: unset !important;
-          }
-        }
-        .radius-left {
-          border-top-right-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-radius: 4px;
-        }
-      }
-    }
-    .chat-menu-icons {
-      text-align: left;
-    }
-    .chat-box {
-      .chat-history {
-        .row {
-          .col-sm-7 {
-            padding-left: 0 !important;
-            padding-right: unset !important;
-          }
-        }
-      }
-    }
-    .chat-menu {
-      left: 0;
-      right: unset;
-    }
-    // product page
-    .product-wrapper {
-      &.sidebaron {
-        .product-grid {
-          .product-wrapper-grid {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-    // index page css
-    .earning-card {
-      .card-body {
-        > .row {
-          > div {
-            .chart-left {
-              .left_side_earning {
-                &:nth-child(3) {
-                  text-align: left;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .chart_data_left {
-      .card-body {
-        .chart-main {
-          .media {
-            .media-body {
-              .right-chart-content {
-                margin-right: 30px;
-              }
-            }
-          }
-        }
-      }
-    }
-    // ecommerce dashboard css
-    .best-seller-table {
-      table {
-        tbody {
-          tr {
-            td {
-              .fa-check-circle {
-                right: 18px;
-              }
-            }
-          }
-        }
-      }
-    }
+  
   }
   @media only screen and (max-width: 991px) {
     .bookmark {

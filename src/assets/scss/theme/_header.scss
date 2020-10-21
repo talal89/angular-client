@@ -294,119 +294,32 @@ $header-size: 136px;
           font-size: 16px;
         }
       }
-      .chat-dropdown {
-        width: 330px;
-        top: 49px;
-        right: 0;
-        left: unset;
-        li {
-          padding: 0 15px;
-          &:last-child {
-            padding-top: 15px;
-            border-top: $card-border-color;
-          }
-          .media {
-            img {
-              width: 40px;
-              position: relative;
-            }
-            .status-circle {
-              width: 9px;
-              height: 9px;
-              position: absolute;
-              top: 2px;
-              left: 42px;
-              border-radius: 50%;
-              border: 2px solid $white;
-            }
-            .media-body {
-              > span {
-                font-weight: 600;
-              }
-              p {
-                margin-bottom: 15px;
-              }
-            }
-          }
-        }
-        &:before,
-        &:after {
-          right: 10px !important;
-          left: unset !important;
-        }
-      }
-      .notification-box {
-        position: relative;
-        svg {
-          animation: tada 1.5s ease infinite;
-        }
-        .badge {
-          position: absolute;
-          right: -5px;
-          top: -6px;
-          padding: 2px 4px;
-          font-size: 12px;
-          font-weight: 700;
-          font-family: $font-work-sans, $font-serif;
-        }
-      }
-      .notification-dropdown {
-        top: 52px;
-        width: 300px;
-        right: -20px !important;
-        left: unset;
-        li {
-          padding: 15px !important;
-          &:first-child {
-            border-bottom: $card-border-color;
-            p {
-              margin-bottom: -3px;
-            }
-          }
-          p {
-            span {
-              color: $light-font;
-            }
-          }
-          &:nth-child(3),
-          &:nth-child(4),
-          &:last-child {
-            padding-top: 0 !important;
-          }
-        }
-        &:before,
-        &:after {
-          right: 28px !important;
-          left: unset !important;
-        }
-      }
       .profile-dropdown {
         width: 160px;
         top: 49px;
         left: 0;
         padding: 10px;
         li {
-          padding: 10px !important;
-          &:hover {
-            color: $primary-color;
-            svg {
+          a {
+            padding: 10px;
+            display: flex;
+            border-bottom: $card-border-color;
+            color: #051418;
+            align-items: center;
+            &:hover {
               color: $primary-color;
-              path {
+              svg {
                 color: $primary-color;
+                path {
+                  color: $primary-color;
+                }
               }
             }
-          }
-          &:last-child {
-            border-top: $card-border-color !important;
-            padding-top: 10px !important;
-          }
-          + li {
-            padding-top: 0 !important;
-          }
-          svg {
-            width: 16px;
-            vertical-align: bottom;
-            margin-right: 10px;
+            svg {
+              width: 16px;
+              vertical-align: bottom;
+              margin-right: 10px;
+            }
           }
         }
       }
