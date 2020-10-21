@@ -1,36 +1,27 @@
 <div class="page-main-header" [ngClass]="{'close_icon': navServices.collapseSidebar}">
-  <div class="main-header-right row m-0">
+  <div class="main-header-right row m-0  justify-content-between">
     <div class="toggle-sidebar">
       <app-feather-icons [icon]="'grid'" (click)=collapseSidebar()></app-feather-icons>
     </div>
-    <div class="nav-right col pull-right right-menu">
-      <ul class="nav-menus" [class.open]="open_mobile_nav">
-        <li class="p-0">
-          <a class="media profile-media onhover-dropdown">
-            <div class="media-body d-flex align-items-center">
-              <span class="user-icon-before">
-                <i class="fa fa-user-circle"></i>
-              </span>
-              <span class="user-label">محمد محمد</span>
-              <span class="user-icon-after"><i data-feather="chevron-down"></i></span>
-            </div>
-            <ul class="profile-dropdown onhover-show-div">
-              <li>
-                <a href="javascript.void(0)">
-                  <i data-feather="user"></i>
-                  <span>Account </span>
-                </a>
-              </li>
-              <li>
-                <a href="javascript.void(0)">
-                  <i data-feather="log-in"></i>
-                  <span>Logout</span>
-                </a>
-              </li>
-            </ul>
-          </a>
-        </li>
-      </ul>
+    <div class="nav-right right-menu">
+      <div ngbDropdown class="d-inline-block user-profile-dropdown">
+        <button class="btn btn-primary dropdown-toggler" id="dropdownBasic1" ngbDropdownToggle>
+          <span class="user-icon-before">
+            <i class="fa fa-user-circle"></i>
+          </span>
+          <span class="user-label">محمد محمد</span>
+        </button>
+        <div ngbDropdownMenu class="dropdown-items" aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>
+            <i data-feather="user"></i>
+            <span>Account </span>
+          </button>
+          <button ngbDropdownItem>
+            <i data-feather="log-in"></i>
+            <span>Logout </span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

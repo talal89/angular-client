@@ -1,0 +1,39 @@
+.user-profile-dropdown{
+    .dropdown-toggler{
+        display: flex;
+        align-items: center;
+
+        &:hover, &:focus {
+            background-color: rgba(0,0,0,0.15) !important;
+            border-color: rgba(0,0,0,0.15) !important;
+        }
+
+        .user-icon-before {
+            font-size: 18px;
+        }
+
+        .user-label {
+            padding: 0 10px;
+        }
+    }
+}
+
+.dropdown-items {
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 14px;
+
+        svg {
+            font-size: 14px;
+            margin-left: 8px;
+            width: 14px;
+        }
+
+        &:focus, &:hover {
+            color: #3e8b7e;
+            border: none;
+        }
+    }
+}
